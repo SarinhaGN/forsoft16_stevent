@@ -1,5 +1,6 @@
 /*ESTE É UM FODENDO ESTILO EM CSS, NÃO MEXA AQUI, CASO TENHA AMOR A SUA VIDA, OBRIGADO(A) A GERENCIA DESTE FODENDO*/
 
+/* PALETA DE CORES https://coolors.co/c0d789-2274a5-fadf63-e6af2e-333333*/
 * {
     margin: 0;
     padding: 0;
@@ -7,91 +8,179 @@
 }
 
 html {
-   background-image: url(../imagens/fondo_reputacion_25601.jpg);
+    /*background: #92BFCA;*/
     background-size: cover;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5185a5+0,72b3e5+100 */
+    background: rgb(81,133,165); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(81,133,165) 0%, rgb(114,179,229) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(81,133,165) 0%,rgb(114,179,229) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(81,133,165) 0%,rgb(114,179,229) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5185a5', endColorstr='#72b3e5',GradientType=0 ); /* IE6-9 */
+}
+
+#login {
+  margin: -10px;
+  box-shadow: 3px;
+	max-width: 40%;
+	border-radius: 5px;
+  position: absolute;
 }
 
 #login-box {
-    box-shadow: 3px;
-	width: 410px;
-	height: 310px;
+	box-shadow: 3px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height:80%;
 	border-radius: 5px;
 }
 
-.login-box-interno {
-	width: 30%;
-	height: 80%;
-	background-color: rgba(0,0,0,.4);
-	position: absolute;
-	margin: 10px;
+#login-box-1 {
+	box-shadow: 3px;
+	width: 60%;
+	border-radius: 5px;
+}
+
+#pao {
+    background-color: rgba(51,51,51,.4);
+    float: left;
+    max-width: 60%;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    font: 18px sans-serif;
+    color: white;
+    text-shadow: 1px 0px 1px #333;
+    padding: 3% 0 3% 0;
+    margin: 10px;
+}
+
+/*.login-box-interno {
+	width: 50%;
+	background-color: rgba(51,51,51,.4);
+	margin-top: 10px;
 	border-radius: 8px;
 	overflow: hidden;
-  padding-top: 15%;
-  float: left;
-
-
-
+	padding: 2%;
+  margin: 1%;
+	float: left;
+  border-radius: 5px;
+} */
+.login-box-interno {
+	width: 50%;
+	background-color: rgba(51,51,51,.4);
+	margin-top: 10px;
+	border-radius: 8px;
+	padding: 2%;
+    margin: 1%;
+	margin: 0 auto;
+    border-radius: 5px;
 }
 
 #login-box-label {
-	height: 45px;
+	text-align: center;
+	font: 18px sans-serif;
+	color: white;
+	text-shadow: 1px 0px 1px #333;
+}
+
+.login-form {
+    text-align: center;
+    color: white;
+}
+
+/* Página de Informações de Evento */
+#center {
+	width: 108%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.3%;
+}
+
+.evento-box {
+	box-shadow: 3px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	clear: both;
+	margin-top: 1.3%;
+}
+
+.evento-box-label {
 	text-align: center;
 	font: 20px/45px sans-serif;
 	color: white;
 	text-shadow: 1px 0px 1px white;
-
-
 }
 
-.input-div input {
-    margin: 20px;
-	background-color: #f2f5f7;
-	border-radius: 15px;
-    display: inline-block;
-    margin-bottom: 8px;
+.evento-box-interno {
+	margin-left: 2%;
+	margin-right: 2%;
+	min-height: 10%;
+	background-color: rgba(51,51,51,.4);
+	margin-top: 10px;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 2%;
+}
 
+.info-evento {
+	text-align: left;
+	font-size: 16px;
+}
+
+/* Fim de página de Informações de Evento */
+
+.input-div input {
+  margin: 20px;
+  background-color: #f2f5f7;
+	border-radius: 15px;
+  display: inline-block;
+  margin-bottom: 8px;
 	width: 250px;
 	height: 40px;
 	padding-left: 5px;
 	font: normal 13px sans-serif;
 	border: 3px solid white;
 	outline: none;
-
-
 }
+
 .input-div:hover input{
 	border-color: #7dc6dd;
 }
+
 #input-senha {
 	margin-top: 0px;
 }
 
-
 .btn_login {
-  font:bold 20px Tahoma, Geneva, sans-serif;
-  font-style:normal;
-  color:#ffffff;
-  background:#2980B9;
-  border:0px solid #ffffff;
-  text-shadow:0px -1px 1px #222222;
-  box-shadow:2px 2px 5px #000000;
-  -moz-box-shadow:2px 2px 5px #000000;
-  -webkit-box-shadow:2px 2px 5px #000000;
-  border-radius:10px 10px 10px 10px;
-  -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;
-  padding: 8px 45px;
-  cursor:pointer;
-  margin:0 auto;
-  width: 250px;
-  margin-top: 0.5%;
+    border: 3px solid #fff;
+    color: #fff;;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 50px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
 }
+
 .btn_login:active{
-cursor:pointer;
-position:relative;
-top:2px;
+  cursor:pointer;
+  position:relative;
+  top:2px;
 }
 
 .btn_login:hover {
@@ -112,20 +201,12 @@ top:2px;
 
 #msg_erro {
     font-size-adjust: auto;
-    font-style: italic;
-    font-weight: 900;
+    font-family: sans-serif;
+    font-weight: 600;
     color: white;
     visibility: hidden;
     margin-top: 7px;
     margin-bottom: 7px;
-
-}
-
-.login-form {
-    text-align: center;
-    color: white;
-    font-size: 22px;
-
 }
 
 #recover {
@@ -139,53 +220,16 @@ top:2px;
     }
 }
 
-#nave{
-    width: 100%;
-    font-size: 23px;
-    color: black;
-    font-weight: 900;
-    height: 60px;
-
-}
-
-#logo-nav {
-    background-color: black;
-    color: white;
-    height: 60px;
-    width: 15%;
-    font-size: 30px;
-    text-align-last: center;
-    float: left;
-}
-
-#texto-nav {
-    width: auto;
-    height: 60px;
-    background-color: aqua;
-}
-
 #div-geral {
     display: inline-block;
-}
-
-#pao {
-    background-color: rgba(0,0,0,.4);
-    width: 60%;
-  height: 80%;
-    position: absolute;
-    right: 10px;
-    top: 70px;
-    border-radius: 10px;
-    text-align: center;
-  font: 20px/45px sans-serif;
-  color: white;
-  text-shadow: 1px 0px 1px white;
-    
+	padding: 4%;
 }
 
 #goibada {
     height: 100%;
     width: 100%;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 .control-group input {
@@ -194,7 +238,7 @@ top:2px;
 	border-radius: 15px;
   display: inline-block;
   margin-bottom: 8px;
-	width: 250px;
+	width: 150px;
 	height: 40px;
 	padding-left: 5px;
 	font: normal 13px sans-serif;
@@ -208,7 +252,7 @@ top:2px;
 	border-radius: 15px;
   display: inline-block;
   margin-bottom: 8px;
-	width: 250px;
+	width: 200px;
 	height: 40px;
 	padding-left: 5px;
 	font: normal 13px sans-serif;
@@ -222,7 +266,7 @@ table {
     width: 90%;
     background-color: white;
     margin:auto;
-
+    height: auto;
 }
 
 td, th {
@@ -241,28 +285,215 @@ tr:nth-child(even) {
   height: 100px;
   width: 100px;
   margin: 3% auto;
-} 
+}
+
+.foto2 {
+  background-image: url("../imagens/download.jpg");
+  background-size: 100%;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
 .info {
   color: white;
   font-size: 24px;
   margin-top: 3%;
   margin-bottom: 3%;
-
 }
 
 .info > div > a {
-
   color: lightblue;
-
 }
-.info > div {
-
-  margin-top: 3%;
-
-}
-  
 
 
 fieldset {
   text-align: center;
+}
+
+/*NAVBAR*/
+
+#nave{
+  width: 100%;
+  font-size: 23px;
+  color: black;
+  font-weight: 900;
+  height: 75px;
+  margin-bottom: 0.5%;
+  /* background-color: rgba(75,75,75,.4); */
+}
+
+#logo-nav {
+  color: white;
+  float: left;
+  height: 100%;
+}
+
+#logo-nav > img {
+  width: 160px;
+  left: 745px;
+}
+
+#texto-nav {
+    width: auto;
+    height: 60px;
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    height: 96%;
+    padding-right: 10%;
+    overflow: hidden;
+    background-color: #333;
+    line-height: 40px;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2274A5;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+
+    font-family: sans-serif;
+    text-align: center
+
+}
+
+h2 {
+
+    font-family: sans-serif;
+    text-align: center
+}
+
+p {
+    padding: 10px;
+}
+
+textarea {
+  border:2px solid #f2f5f7;
+	border-radius:10px;
+	height: 60px;
+	width: 300px;
+}
+/*FIM NAVBAR*/
+
+/* Modal */
+a {
+  color: currentColor;
+}
+
+.modal-cadastro {
+	/* top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  margin: 0 auto;
+  z-index: 99998; */
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  font-family: inherit;
+  height: auto;
+  width: 43%;
+visibility: hidden;
+  top: 20%;
+  left: 30%;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	z-index: 200;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+  z-index: 1;
+}
+
+.close:hover { background: #00d9ff; }
+
+.form-divs {
+display: inline-block;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 360px) {
+    #login-box-label {
+      height: 40px;
+      font: 12px/30px sans-serif;
+        
+    }
+    .login-box-interno {
+        
+    width: 80%;
+    height: 80%;
+    font-size: 18px;
+    font-size: 20px;
+     
+    }
+    
+    .input-div input {
+    
+    width: 75%;
+    height: 10%;
+    }
+    
+    li a, .dropbtn {
+    padding: 16px 8px;
+    font-size: 18px;
+    }
 }
